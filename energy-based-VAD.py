@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io import wavfile
-sr, data = wavfile.read("녹음.wav")
+sr, data = wavfile.read("example.wav")
 
 #제곱합제곱근(L2 노름)
 def l2_norm(frames):
