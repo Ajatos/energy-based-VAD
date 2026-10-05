@@ -77,7 +77,7 @@ full_clean_data = remove_shorts_speech(clean_data,5)
 #그래프로 나타내기
 final_data = full_clean_data*l2_data.max()
 y = np.arange(0, n_frame, 1)* frame_len / sr
-plt.plot(y, l2_data, label='Signal energy')
+plt.plot(y, l2_data, label='Frame L2 norm')
 plt.plot(y, final_data, label='VAD decision')
 plt.ylabel("energy")
 plt.xlabel("time(s)")
